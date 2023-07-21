@@ -1,0 +1,11 @@
+CREATE TABLE `usuarios` (
+  `idusuarios` int NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(255) DEFAULT NULL,
+  `email` varchar(150) DEFAULT NULL,
+  `isadmin` int DEFAULT '0',
+  `token` longtext,
+  `token_exp` bigint DEFAULT NULL,
+  `fechaAlta` timestamp NULL DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`idusuarios`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

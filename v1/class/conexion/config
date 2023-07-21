@@ -1,0 +1,9 @@
+{
+	"conexion" : {
+       	   "server" : "localhost",
+            "user"  : "wwthin_provs",
+            "password" : "AcZeG85lY83u",
+            "database" : "wwthin_provs",
+            "port": "3306"
+        }
+}

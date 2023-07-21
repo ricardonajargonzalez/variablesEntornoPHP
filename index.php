@@ -5,6 +5,8 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 
-echo $s3_bucket = $_ENV['HOSTDB'];
+//echo $s3_bucket = $_ENV['HOSTDB'];
+
+//echo __DIR__ . '/vendor/autoload.php';
 
 ?>
