@@ -36,8 +36,8 @@ require  '../vendor/autoload.php';
     //Tods los wizard
      $_GET['resource_type'] = $matches[3];
      require 'server.php';
-  }else if(preg_match('/\/([^\/]+)\/([^\/]+)/', $_SERVER["REQUEST_URI"], $matches)){
-         echo 4;
+  }else if(preg_match('/\/([^\/]+)\/([^\/]+)\/([^\/]+)/', $_SERVER["REQUEST_URI"], $matches)){
+         echo 5;
   }else{
       $datosArray = $_respuestas->error_400();
       echo json_encode($datosArray);
