@@ -26,21 +26,27 @@ require  '../vendor/autoload.php';
 
    */
 
-  
+   preg_match('/\/([^\/]+)\/([^\/]+)\/([^\/]+)/', $_SERVER["REQUEST_URI"], $matches);
+   print_r($matches);
+
+
  if (preg_match('/\/([^\/]+)\/([^\/]+)\/([^\/]+)\/([^\/]+)/', $_SERVER["REQUEST_URI"], $matches)) {
     //Wizard en especifico con su id
      $_GET['resource_type'] = $matches[3];
      $_GET['resource_id'] = $matches[4];
-     require 'server.php';
+  //   require 'server.php';
+  echo 1;
   }else if(preg_match('/\/([^\/]+)\/([^\/]+)\/([^\/]+)\//', $_SERVER["REQUEST_URI"], $matches)) {
     //Tods los wizard
      $_GET['resource_type'] = $matches[3];
-     require 'server.php';
+    // require 'server.php';
+    echo 2;
   }else if(preg_match('/\/([^\/]+)\/([^\/]+)\/([^\/]+)/', $_SERVER["REQUEST_URI"], $matches)){
-         echo 5;
+         echo 3;
   }else{
-      $datosArray = $_respuestas->error_400();
-      echo json_encode($datosArray);
+     // $datosArray = $_respuestas->error_400();
+     // echo json_encode($datosArray);
+     echo 4;
   }
 
 ?>
