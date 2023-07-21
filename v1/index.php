@@ -1,7 +1,5 @@
 
 <?php
-header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, X-Requested-With");
-header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE OPTIONS');
 
 require_once 'class/respuestas.class.php';
 require  '../vendor/autoload.php';
