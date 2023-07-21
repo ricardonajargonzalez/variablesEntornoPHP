@@ -1,6 +1,5 @@
-
 <?php
-      header('Content-Type: application/json');
+header('Content-Type: application/json');
 require_once 'class/respuestas.class.php';
 require  '../vendor/autoload.php';
 
