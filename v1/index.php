@@ -1,6 +1,6 @@
 
 <?php
-
+      header('Content-Type: application/json');
 require_once 'class/respuestas.class.php';
 require  '../vendor/autoload.php';
 
@@ -35,7 +35,6 @@ require  '../vendor/autoload.php';
      $_GET['resource_type'] = $matches[3];
      require 'server.php';
   }else{
-      header('Content-Type: application/json');
       $datosArray = $_respuestas->error_400();
       echo json_encode($datosArray);
   }
